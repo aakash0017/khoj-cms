@@ -1,0 +1,11 @@
+{
+    "provider": "aws-s3",
+    "providerOptions": {
+        "accessKeyId": "AKIA4QB2WTN52ALPBNBY",
+        "secretAccessKey": "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",
+        "region": "us-east-1",
+        "params": {
+            "Bucket": "khoj-face"
+        }
+    }
+}

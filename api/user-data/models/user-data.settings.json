@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_data",
+  "info": {
+    "name": "userData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "contactNo": {
+      "type": "biginteger"
+    },
+    "Face": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
